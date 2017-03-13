@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    android:keepScreenOn="true">
+
+    <Button
+        android:text="I am ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imOkBtn"
+        android:onClick="userAckFall"
+        android:background="@color/colorAccent"
+        android:textColor="@color/btn_login_bg"
+        style="buttonStyle"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:text="min_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imOkBtn"
+        android:id="@+id/countDownText"
+        android:textSize="36sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Are you ok?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/areYouOkText"
+        android:textSize="30sp"
+        android:textColor="@color/bg_register"
+        android:layout_above="@+id/countDownText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+</RelativeLayout>

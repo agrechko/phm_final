@@ -1,0 +1,15 @@
+1) Fall Monitoring
+Test: Turn on fall monitoring on the main screen. Input a valid phone number. Simulate a fall by quick monition down, an abrupt stop, and put phone in a resting position (not upright).
+Expected result: An alarm should ring and a countdown timer of 2 minutes should display on the screen with an acknowledge button.
+
+1.1) Fall Monitoring
+Test: Turn on fall monitoring on the main screen. Input a invalid phone number (not enough numbers number)
+Expected result: Application should reject number and show error "Please put a valid phone number"
+
+1.2) Fall Monitoring
+Test: Turn on fall monitoring on the main screen. Input a valid phone number. Simulate a fall by quick monition down, an abrupt stop, and put phone in a resting position (not upright). Acknowledge the user is ok.
+Expected result: The fall detected screen should close and the home screen of the app should show. No text should be sent.
+
+1) Fall Monitoring
+Test: Turn on fall monitoring on the main screen. Input a valid phone number. Simulate a fall by quick monition down, an abrupt stop, and put phone in a resting position (not upright). Do not acknowledge user is ok.
+Expected result: An sms should be sent to the emergency contact number set previously with location of the user (if location service is off then "unknown" should be displayed for location)

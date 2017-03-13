@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:id="@+id/emergencyPhoneField"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:text="save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emergencyPhoneField"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/saveEmergencyPhonebtn"
+        android:onClick="saveEmergencyPhone"
+        android:background="@color/colorAccent"
+        android:textColor="@color/btn_login_bg" />
+
+    <TextView
+        android:text="Please enter the emergency contact number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpTextFallSetting"
+        android:textSize="24sp"
+        android:textColor="@color/bg_register"
+        android:layout_above="@+id/emergencyPhoneField"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="37dp" />
+</RelativeLayout>

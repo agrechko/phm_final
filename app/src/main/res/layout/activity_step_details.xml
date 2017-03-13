@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    android:weightSum="1"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:text="Daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyText"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/bg_register"
+        tools:ignore="HardcodedText"
+        android:layout_weight="0.05"
+        android:textStyle="normal|bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyStepCount"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        tools:ignore="HardcodedText"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Weekly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weeklyText"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/bg_register"
+        tools:ignore="HardcodedText"
+        android:layout_weight="0.05"
+        android:textStyle="normal|bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weeklyStepInfo"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        tools:ignore="HardcodedText"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Life Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lifeTimeText"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/bg_register"
+        tools:ignore="HardcodedText"
+        android:layout_weight="0.05"
+        android:textStyle="normal|bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lifeTimeStepInfo"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        tools:ignore="HardcodedText"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/textView22"
+        android:textSize="36sp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stepInfoClose"
+        android:onClick="closeView"
+        android:textColor="@color/btn_login_bg"
+        android:background="@color/colorAccent"
+        tools:ignore="HardcodedText"
+        android:elevation="0dp"
+        android:gravity="center" />
+</LinearLayout>

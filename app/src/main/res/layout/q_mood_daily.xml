@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed">
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/seekBar_mood_selection"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:max="4"
+        android:progress="2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_mood_selection"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/selectDailyMood"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="How are you feeling today?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@color/bg_register"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/selectDailyMood"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSaveMoodDaily"
+        android:onClick="saveMoodDaily"
+        android:background="@color/colorAccent"
+        android:textColor="@color/btn_login_bg"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/seekBar_mood_selection"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHomeDailyMood"
+        android:onClick="moodDailyHome"
+        android:textColor="@color/btn_login_bg"
+        android:background="@color/colorAccent"
+        tools:ignore="HardcodedText"
+        android:layout_alignBottom="@+id/btnSaveMoodDaily"
+        android:layout_toEndOf="@+id/selectDailyMood"
+        android:layout_alignTop="@+id/btnSaveMoodDaily" />
+</RelativeLayout>

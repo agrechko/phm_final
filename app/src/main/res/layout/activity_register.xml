@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/unnamed"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:text="PHM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:layout_weight="0.57"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textColor="@color/bg_main"
+        tools:ignore="HardcodedText,InefficientWeight" />
+
+    <TextView
+        android:text="Registeration"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        tools:text="Registeration"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:hint="@string/hint_name"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_register_hint"
+            android:elevation="1dp"
+            tools:ignore="Deprecated,UnusedAttribute" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_register_hint"
+            tools:ignore="Deprecated" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_register_hint"
+            tools:ignore="Deprecated" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ea4c88"
+            android:text="@string/btn_register"
+            android:onClick="onRegister"
+            android:textColor="@color/white" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/btn_link_to_login"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_login_bg"
+            android:textSize="15dp"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+</LinearLayout>

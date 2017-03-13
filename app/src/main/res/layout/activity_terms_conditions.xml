@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/eula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.99" />
+
+    <Button
+        android:text="Decline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/declineBtn"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        android:onClick="declineTerms"/>
+
+    <Button
+        android:id="@+id/acceptBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:text="accept"
+        android:background="@color/btn_login_bg"
+        android:textColor="@color/colorAccent"
+        android:onClick="acceptTerms"/>
+
+</LinearLayout>
